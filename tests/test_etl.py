@@ -4,10 +4,7 @@ Run with: pytest tests/test_etl.py -v
 These tests don't require a live Postgres connection — load_table's
 SQL-touching paths are exercised via a lightweight fake engine.
 """
-import pandas as pd
-import pytest
-
-from etl.extract import extract_all, TABLES
+from etl.extract import TABLES, extract_all
 
 
 def test_tables_config_matches_expected_sources():
