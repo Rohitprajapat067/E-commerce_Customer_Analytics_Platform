@@ -6,6 +6,15 @@ app configuration and the health endpoint's error-handling path.
 Full integration tests (hitting real KPI endpoints) should run in CI
 against the ephemeral Postgres service — see .github/workflows/ci.yml.
 """
+"""
+Smoke tests for the FastAPI app's route wiring and schemas.
+
+These tests avoid requiring a live Postgres connection by only checking
+app configuration and the health endpoint's error-handling path.
+Full integration tests (hitting real KPI endpoints) should run in CI
+against the ephemeral Postgres service — see .github/workflows/ci.yml.
+"""
+
 from fastapi.testclient import TestClient
 
 from api.main import app
