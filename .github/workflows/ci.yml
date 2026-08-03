@@ -24,6 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt -r api/requirements.txt
+          pip install --force-reinstall "dbt-core>=1.8.0,<2.0.0" "dbt-postgres>=1.8.0,<2.0.0"
           pip install ruff
 
       - name: Lint with ruff
@@ -33,4 +34,6 @@ jobs:
         run: python data/generate_sample_data.py
 
       - name: Run unit tests
+        env:
+          DBT_ALLOW_EXPERIMENTAL_ADAPTERS: "true"
         run: pytest tests/ -v
