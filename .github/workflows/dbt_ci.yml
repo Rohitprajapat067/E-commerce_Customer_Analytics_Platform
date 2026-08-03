@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install --no-cache-dir --force-reinstall "dbt-core>=1.8.0,<2.0.0" "dbt-postgres>=1.8.0,<2.0.0"
-          dbt --version
+          python -m dbt --version
 
       - name: Apply raw DDL
         run: |
@@ -80,5 +80,5 @@ jobs:
           DBT_ALLOW_EXPERIMENTAL_ADAPTERS: "true"
         run: |
           cp profiles.yml.example profiles.yml
-          dbt deps || true
-          dbt build --profiles-dir .
+          python -m dbt deps || true
+          python -m dbt build --profiles-dir .
