@@ -29,6 +29,54 @@ project/
 - `load.py`: `load_table(engine, df, table, mode, watermark_col)`. `full_refresh` truncates then appends (preserving DDL constraints); `incremental` filters rows newer than `MAX(watermark_col)` already in the target table.
 - `run_etl.py`: entrypoint; defines `LOAD_ORDER` (parents before children for FK integrity) and which tables load incrementally.
 
+### dbt Model Lineage
+
+```mermaid
+flowchart LR
+    subgraph Bronze [raw schema]
+        r_cust[(raw.customers)]
+        r_prod[(raw.products)]
+        r_ord[(raw.orders)]
+        r_item[(raw.order_items)]
+    end
+
+    subgraph Silver [staging schema — dbt]
+        s_cust[stg_customers]
+        s_prod[stg_products]
+        s_ord[stg_orders]
+        s_item[stg_order_items]
+    end
+
+    subgraph Gold [analytics schema — dbt]
+        g_dimcust[dim_customers]
+        g_dimprod[dim_products]
+        g_fctord[fct_orders]
+        g_rfm[customer_rfm]
+        g_clv[customer_clv]
+    end
+
+    r_cust --> s_cust
+    r_prod --> s_prod
+    r_ord --> s_ord
+    r_item --> s_item
+
+    s_cust --> g_dimcust
+    s_ord --> g_dimcust
+    s_item --> g_dimcust
+
+    s_prod --> g_dimprod
+    s_item --> g_dimprod
+    s_ord --> g_dimprod
+
+    s_ord --> g_fctord
+    s_item --> g_fctord
+
+    g_fctord --> g_rfm
+    g_fctord --> g_clv
+```
+
+Source: [`docs/diagrams/dbt_lineage.mmd`](diagrams/dbt_lineage.mmd)
+
 ### `dbt/ecommerce_analytics/models/staging/`
 One model per raw table (`stg_customers`, `stg_products`, `stg_orders`, `stg_order_items`): trims/casts types, computes light derived columns (e.g. `line_revenue`), no business logic beyond cleaning.
 

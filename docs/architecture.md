@@ -2,6 +2,37 @@
 
 ## Data Flow
 
+```mermaid
+flowchart TD
+    A[CSV Sources<br/>data/raw/] -->|Python ETL<br/>etl/run_etl.py| B[(PostgreSQL<br/>raw schema — Bronze)]
+    B -->|dbt staging models| C[(PostgreSQL<br/>staging schema — Silver)]
+    C -->|dbt mart models| D[(PostgreSQL<br/>analytics schema — Gold)]
+
+    D --> E[FastAPI<br/>api/]
+    D --> F[Power BI<br/>dashboards/]
+
+    E --> G[Swagger UI<br/>/docs]
+
+    H[Apache Airflow<br/>airflow/dags/] -.orchestrates.-> A
+    H -.orchestrates.-> B
+    H -.orchestrates.-> C
+    H -.orchestrates.-> D
+
+    I[Prometheus + Grafana<br/>monitoring/] -.observes.-> E
+    I -.observes.-> B
+
+    classDef bronze fill:#cd7f32,color:#fff,stroke:#333
+    classDef silver fill:#c0c0c0,color:#000,stroke:#333
+    classDef gold fill:#ffd700,color:#000,stroke:#333
+    class B bronze
+    class C silver
+    class D gold
+```
+
+Source: [`docs/diagrams/architecture.mmd`](diagrams/architecture.mmd)
+
+## Text Summary
+
 ```
 CSV sources (data/raw/)
       │

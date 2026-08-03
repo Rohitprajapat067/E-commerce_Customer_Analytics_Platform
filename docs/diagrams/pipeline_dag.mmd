@@ -1,0 +1,11 @@
+%% Airflow DAG: ecommerce_analytics_pipeline (@daily)
+%% Render: https://mermaid.live, or view on GitHub in docs/HLD.md.
+
+flowchart LR
+    A[extract_and_load_bronze<br/>PythonOperator] --> B[dbt_deps<br/>BashOperator]
+    B --> C[dbt_run<br/>BashOperator]
+    C --> D[dbt_test<br/>BashOperator]
+    D --> E[dbt_docs_generate<br/>BashOperator]
+
+    classDef task fill:#3d5afe,color:#fff,stroke:#1a237e
+    class A,B,C,D,E task

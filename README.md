@@ -1,112 +1,123 @@
 # E-commerce Customer Analytics Platform
 
-An end-to-end, production-style analytics platform for e-commerce customer data — built with PostgreSQL, Python ETL, dbt, Airflow, FastAPI, Docker, and GitHub Actions.
+An end-to-end analytics platform for e-commerce customer data — built with PostgreSQL, Python, dbt, Airflow, FastAPI, Docker, and Power BI.
 
-> This repo is a working scaffold: it runs locally with Docker Compose, loads sample data, transforms it through a Bronze → Silver → Gold warehouse with dbt, and serves KPIs through a FastAPI service. Swap in your own source data and extend the analytics layer as needed.
+Raw order/customer data flows through a Bronze → Silver → Gold warehouse, gets transformed into RFM, CLV, cohort, and churn models, and is served through a REST API and BI dashboards — all orchestrated by Airflow and containerized with Docker.
 
 ## Architecture
 
-```
-CSV / API sources
-      │
-      ▼
- Python ETL (etl/)  ──────────────►  PostgreSQL "raw" schema (Bronze)
-                                            │
-                                            ▼
-                                     dbt staging models (Silver)
-                                            │
-                                            ▼
-                                 dbt mart models: RFM, CLV, cohorts (Gold)
-                                            │
-                              ┌─────────────┴─────────────┐
-                              ▼                            ▼
-                        FastAPI (api/)              Power BI (dashboards/)
-                              │
-                              ▼
-                    Prometheus + Grafana (monitoring/)
+```mermaid
+flowchart TD
+    A[CSV Sources<br/>data/raw/] -->|Python ETL<br/>etl/run_etl.py| B[(PostgreSQL<br/>raw schema — Bronze)]
+    B -->|dbt staging models| C[(PostgreSQL<br/>staging schema — Silver)]
+    C -->|dbt mart models| D[(PostgreSQL<br/>analytics schema — Gold)]
+
+    D --> E[FastAPI<br/>api/]
+    D --> F[Power BI<br/>dashboards/]
+
+    E --> G[Swagger UI<br/>/docs]
+
+    H[Apache Airflow<br/>airflow/dags/] -.orchestrates.-> A
+    H -.orchestrates.-> B
+    H -.orchestrates.-> C
+    H -.orchestrates.-> D
+
+    I[Prometheus + Grafana<br/>monitoring/] -.observes.-> E
+    I -.observes.-> B
+
+    classDef bronze fill:#cd7f32,color:#fff,stroke:#333
+    classDef silver fill:#c0c0c0,color:#000,stroke:#333
+    classDef gold fill:#ffd700,color:#000,stroke:#333
+    class B bronze
+    class C silver
+    class D gold
 ```
 
-Airflow (`airflow/dags/`) orchestrates the ETL → dbt run → dbt test pipeline on a schedule.
+Airflow runs the daily pipeline: `ETL → dbt run → dbt test → dbt docs`.
 
-See [`docs/architecture.md`](docs/architecture.md), [`docs/ERD.md`](docs/ERD.md), [`docs/HLD.md`](docs/HLD.md) and [`docs/LLD.md`](docs/LLD.md) for design details.
+Full design docs: [`docs/architecture.md`](docs/architecture.md) · [`docs/ERD.md`](docs/ERD.md) · [`docs/HLD.md`](docs/HLD.md) · [`docs/LLD.md`](docs/LLD.md) · [`docs/diagrams/`](docs/diagrams) (Mermaid sources)
 
 ## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| Source | CSV (synthetic sample data included) |
 | Database | PostgreSQL 16 |
-| ETL | Python 3.12 (Pandas, SQLAlchemy) |
-| Transform | dbt (dbt-postgres) |
+| ETL | Python (Pandas, SQLAlchemy) |
+| Transform | dbt |
 | Orchestration | Apache Airflow |
-| Analytics | SQL (window functions, RFM, CLV, cohort, churn, market basket) |
 | API | FastAPI |
-| Dashboard | Power BI (connects over Postgres) |
-| Container | Docker / Docker Compose |
+| Dashboard | Power BI |
+| Containerization | Docker Compose |
 | CI/CD | GitHub Actions |
 | Monitoring | Prometheus + Grafana |
 
 ## Repository Layout
 
 ```
-project/
-├── data/raw/          sample source CSVs
-├── sql/schema/        DDL: schemas, dimension/fact tables, constraints, indexes
-├── sql/analytics/     20+ standalone analytics SQL queries (RFM, CLV, cohort, churn...)
-├── etl/               Python extract/load scripts (Bronze layer loader)
-├── dbt/               dbt project: staging + marts models, tests, docs
-├── airflow/dags/       DAG orchestrating ETL → dbt run → dbt test
-├── api/                FastAPI service exposing KPI endpoints (Swagger at /docs)
+├── data/               sample source CSVs + generator script
+├── sql/schema/         DDL: schemas, dim/fact tables, constraints, indexes
+├── sql/analytics/      20+ SQL queries — RFM, CLV, cohort, churn, market basket
+├── etl/                Python extract/load scripts (Bronze loader)
+├── dbt/                staging + mart models, tests, docs
+├── airflow/dags/       DAG: ETL → dbt run → dbt test
+├── api/                FastAPI service (KPI, RFM, CLV, product endpoints)
 ├── dashboards/         Power BI connection guide
+├── docs/diagrams/      Mermaid diagram sources (architecture, ERD, lineage, DAG)
 ├── monitoring/         Prometheus + Grafana config
 ├── tests/              unit tests for ETL and API
-└── .github/workflows/  CI: lint, unit tests, dbt build
+└── .github/workflows/  CI: lint, tests, dbt build
 ```
 
 ## Quickstart
 
 ```bash
-git clone <your-fork-url>
-cd ecommerce-customer-analytics
+git clone https://github.com/Rohitprajapat067/E-commerce_Customer_Analytics_Platform.git
+cd E-commerce_Customer_Analytics_Platform
 cp .env.example .env
 
 # Bring up Postgres, Airflow, API, monitoring
 docker compose up -d --build
 
-# Run the ETL once to load sample CSVs into the "raw" schema
+# Load sample data into the raw (Bronze) schema
 docker compose exec api python -m etl.run_etl
 
-# Build the dbt warehouse (staging -> marts)
+# Build the warehouse (Silver + Gold)
 docker compose exec api bash -c "cd /app/dbt/ecommerce_analytics && dbt run && dbt test"
 ```
 
-- API + Swagger docs: http://localhost:8000/docs
-- Airflow UI: http://localhost:8080 (admin/admin, see `.env.example`)
-- Postgres: `localhost:5432` (see `.env.example` for credentials)
-- Grafana: http://localhost:3000
+| Service | URL |
+|---|---|
+| API + Swagger docs | http://localhost:8000/docs |
+| Airflow UI | http://localhost:8080 (`admin` / `admin`) |
+| Grafana | http://localhost:3000 |
+| PostgreSQL | `localhost:5432` |
 
-## KPIs / Analytics Covered
+## Analytics Covered
 
-- RFM segmentation (Recency, Frequency, Monetary)
-- Customer Lifetime Value (CLV)
-- Cohort retention analysis
-- Churn indicators
-- Market basket / product affinity
-- Revenue, AOV, and order KPIs via window functions
+- **RFM segmentation** — Recency, Frequency, Monetary scoring
+- **Customer Lifetime Value (CLV)** — historical + predictive
+- **Cohort retention** — monthly acquisition cohorts
+- **Churn indicators** — days-since-last-order, cancellation rate
+- **Market basket analysis** — product affinity / co-purchase pairs
+- **Revenue KPIs** — AOV, running totals, category/country breakdowns via window functions
 
-See [`sql/analytics/`](sql/analytics) for the raw SQL and [`dbt/ecommerce_analytics/models/marts`](dbt/ecommerce_analytics/models/marts) for the dbt-modeled equivalents.
+Raw SQL lives in [`sql/analytics/`](sql/analytics); the same logic is modeled and tested in [`dbt/ecommerce_analytics/models/marts`](dbt/ecommerce_analytics/models/marts).
 
 ## Power BI
 
-`.pbix` files are binary and environment-specific, so this repo ships a connection guide instead of a prebuilt file — see [`dashboards/README.md`](dashboards/README.md). Point Power BI's Postgres connector at the `analytics` (gold) schema and the four suggested dashboards (Executive KPI, Customer, Product, Revenue) build directly on top of the mart tables/views.
+`.pbix` files aren't included since they're binary and environment-specific — see [`dashboards/README.md`](dashboards/README.md) for a connection guide and the four suggested dashboards (Executive KPI, Customer, Product, Revenue), all built on the `analytics` (Gold) schema.
 
-## CI/CD
+## Testing & CI
 
-`.github/workflows/ci.yml` runs linting and unit tests on every push/PR. `.github/workflows/dbt_ci.yml` spins up a throwaway Postgres service and runs `dbt build` against it to catch model/test regressions.
+```bash
+pytest tests/ -v
+```
+
+GitHub Actions runs linting and unit tests on every push (`ci.yml`), plus a full `dbt build` against an ephemeral Postgres instance (`dbt_ci.yml`) to catch model and data-quality regressions.
 
 ## Deployment
 
-See [`docs/deployment_guide.md`](docs/deployment_guide.md) for the AWS EC2 + RDS + S3 deployment path.
+See [`docs/deployment_guide.md`](docs/deployment_guide.md) for the AWS EC2 + RDS + S3 path.
 
 ## License
 

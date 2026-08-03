@@ -25,6 +25,19 @@
 ## 6. Orchestration
 - **Apache Airflow** DAG (`airflow/dags/ecommerce_analytics_dag.py`) runs daily: ETL → `dbt run` → `dbt test` → `dbt docs generate`.
 
+```mermaid
+flowchart LR
+    A[extract_and_load_bronze<br/>PythonOperator] --> B[dbt_deps<br/>BashOperator]
+    B --> C[dbt_run<br/>BashOperator]
+    C --> D[dbt_test<br/>BashOperator]
+    D --> E[dbt_docs_generate<br/>BashOperator]
+
+    classDef task fill:#3d5afe,color:#fff,stroke:#1a237e
+    class A,B,C,D,E task
+```
+
+Source: [`docs/diagrams/pipeline_dag.mmd`](diagrams/pipeline_dag.mmd)
+
 ## 7. Monitoring & CI/CD
 - **Prometheus + Grafana** for container/infra observability (extend with a Postgres exporter and FastAPI instrumentation for production).
 - **GitHub Actions**: lint + unit tests on every push; a separate workflow spins up ephemeral Postgres and runs `dbt build` to catch model/test regressions before merge.
