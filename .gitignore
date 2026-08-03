@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Env
+.env
+
+# dbt
+dbt/ecommerce_analytics/target/
+dbt/ecommerce_analytics/dbt_packages/
+dbt/ecommerce_analytics/logs/
+dbt/ecommerce_analytics/profiles.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Power BI
+*.pbix.bak

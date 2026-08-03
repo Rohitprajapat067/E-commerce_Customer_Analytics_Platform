@@ -1,0 +1,82 @@
+name: dbt CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dbt/**"
+      - "sql/schema/**"
+      - "etl/**"
+      - "data/raw/**"
+      - ".github/workflows/dbt_ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "dbt/**"
+      - "sql/schema/**"
+      - "etl/**"
+
+jobs:
+  dbt-build:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: ecommerce_analytics
+          POSTGRES_USER: analytics_user
+          POSTGRES_PASSWORD: change_me
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U analytics_user -d ecommerce_analytics"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      PG_HOST: localhost
+      PG_PORT: 5432
+      PG_DB: ecommerce_analytics
+      PG_USER: analytics_user
+      PG_PASSWORD: change_me
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install dbt-postgres==1.8.2
+
+      - name: Apply raw DDL
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          for f in sql/schema/*.sql; do
+            echo "Applying $f"
+            PGPASSWORD=$PG_PASSWORD psql -h $PG_HOST -U $PG_USER -d $PG_DB -f "$f"
+          done
+
+      - name: Generate sample data
+        run: python data/generate_sample_data.py
+
+      - name: Run ETL (load Bronze layer)
+        run: python -m etl.run_etl
+
+      - name: dbt build (run + test)
+        working-directory: dbt/ecommerce_analytics
+        env:
+          DBT_PROFILES_DIR: .
+        run: |
+          cp profiles.yml.example profiles.yml
+          dbt deps || true
+          dbt build --profiles-dir .

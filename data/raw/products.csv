@@ -1,0 +1,121 @@
+product_id,product_name,category,sub_category,unit_price,unit_cost
+1,Cameras Item 1,Electronics,Cameras,280.02,190.78
+2,Cameras Item 2,Electronics,Cameras,238.98,121.7
+3,Smartphones Item 3,Electronics,Smartphones,232.11,137.62
+4,Headphones Item 4,Electronics,Headphones,316.2,212.9
+5,Headphones Item 5,Electronics,Headphones,354.07,175.32
+6,Smartphones Item 6,Electronics,Smartphones,166.81,112.91
+7,Headphones Item 7,Electronics,Headphones,171.07,82.39
+8,Laptops Item 8,Electronics,Laptops,335.09,181.11
+9,Headphones Item 9,Electronics,Headphones,221.84,107.64
+10,Smartphones Item 10,Electronics,Smartphones,474.27,245.05
+11,Laptops Item 11,Electronics,Laptops,505.42,276.01
+12,Smartphones Item 12,Electronics,Smartphones,147.52,97.39
+13,Headphones Item 13,Electronics,Headphones,113.52,59.0
+14,Cameras Item 14,Electronics,Cameras,182.82,128.38
+15,Cameras Item 15,Electronics,Cameras,225.59,129.8
+16,Smartphones Item 16,Electronics,Smartphones,293.65,168.7
+17,Smartphones Item 17,Electronics,Smartphones,123.86,60.19
+18,Headphones Item 18,Electronics,Headphones,561.44,260.33
+19,Cameras Item 19,Electronics,Cameras,92.09,45.28
+20,Cameras Item 20,Electronics,Cameras,219.02,125.69
+21,Cameras Item 21,Electronics,Cameras,205.02,149.17
+22,Headphones Item 22,Electronics,Headphones,359.3,239.78
+23,Headphones Item 23,Electronics,Headphones,153.55,86.08
+24,Smartphones Item 24,Electronics,Smartphones,425.71,235.32
+25,Accessories Item 25,Apparel,Accessories,234.35,167.17
+26,Men's Wear Item 26,Apparel,Men's Wear,150.31,84.03
+27,Footwear Item 27,Apparel,Footwear,326.68,164.9
+28,Accessories Item 28,Apparel,Accessories,364.04,166.17
+29,Men's Wear Item 29,Apparel,Men's Wear,419.43,222.12
+30,Women's Wear Item 30,Apparel,Women's Wear,204.15,92.82
+31,Accessories Item 31,Apparel,Accessories,171.33,82.53
+32,Men's Wear Item 32,Apparel,Men's Wear,295.23,134.53
+33,Women's Wear Item 33,Apparel,Women's Wear,131.4,66.91
+34,Footwear Item 34,Apparel,Footwear,478.97,259.01
+35,Accessories Item 35,Apparel,Accessories,76.91,53.96
+36,Women's Wear Item 36,Apparel,Women's Wear,496.08,244.99
+37,Footwear Item 37,Apparel,Footwear,297.66,162.02
+38,Women's Wear Item 38,Apparel,Women's Wear,194.29,100.48
+39,Footwear Item 39,Apparel,Footwear,375.26,173.96
+40,Men's Wear Item 40,Apparel,Men's Wear,88.88,45.0
+41,Accessories Item 41,Apparel,Accessories,605.42,276.04
+42,Women's Wear Item 42,Apparel,Women's Wear,300.8,211.92
+43,Women's Wear Item 43,Apparel,Women's Wear,439.52,214.86
+44,Accessories Item 44,Apparel,Accessories,271.84,149.39
+45,Footwear Item 45,Apparel,Footwear,311.48,190.2
+46,Men's Wear Item 46,Apparel,Men's Wear,401.52,191.92
+47,Men's Wear Item 47,Apparel,Men's Wear,244.56,123.84
+48,Footwear Item 48,Apparel,Footwear,242.0,139.14
+49,Kitchen Item 49,Home,Kitchen,538.98,261.33
+50,Kitchen Item 50,Home,Kitchen,377.83,220.62
+51,Decor Item 51,Home,Decor,515.68,255.78
+52,Bedding Item 52,Home,Bedding,116.82,69.26
+53,Furniture Item 53,Home,Furniture,240.08,150.94
+54,Decor Item 54,Home,Decor,190.46,104.64
+55,Bedding Item 55,Home,Bedding,499.98,237.55
+56,Kitchen Item 56,Home,Kitchen,34.57,18.55
+57,Bedding Item 57,Home,Bedding,20.94,9.8
+58,Furniture Item 58,Home,Furniture,175.82,135.18
+59,Bedding Item 59,Home,Bedding,124.17,64.68
+60,Furniture Item 60,Home,Furniture,416.86,265.23
+61,Decor Item 61,Home,Decor,52.86,32.54
+62,Kitchen Item 62,Home,Kitchen,242.39,114.69
+63,Furniture Item 63,Home,Furniture,37.78,20.28
+64,Furniture Item 64,Home,Furniture,181.91,131.62
+65,Kitchen Item 65,Home,Kitchen,9.2,5.32
+66,Furniture Item 66,Home,Furniture,318.4,180.14
+67,Bedding Item 67,Home,Bedding,14.91,7.74
+68,Kitchen Item 68,Home,Kitchen,498.16,296.51
+69,Furniture Item 69,Home,Furniture,219.76,145.92
+70,Kitchen Item 70,Home,Kitchen,307.09,220.58
+71,Decor Item 71,Home,Decor,178.01,113.43
+72,Bedding Item 72,Home,Bedding,461.17,233.17
+73,Skincare Item 73,Beauty,Skincare,370.92,194.26
+74,Skincare Item 74,Beauty,Skincare,211.18,161.5
+75,Haircare Item 75,Beauty,Haircare,86.31,53.41
+76,Skincare Item 76,Beauty,Skincare,273.29,190.28
+77,Makeup Item 77,Beauty,Makeup,317.11,186.74
+78,Skincare Item 78,Beauty,Skincare,42.51,30.57
+79,Skincare Item 79,Beauty,Skincare,294.44,178.92
+80,Makeup Item 80,Beauty,Makeup,139.42,97.78
+81,Makeup Item 81,Beauty,Makeup,297.3,195.16
+82,Haircare Item 82,Beauty,Haircare,336.12,182.0
+83,Haircare Item 83,Beauty,Haircare,26.63,12.91
+84,Makeup Item 84,Beauty,Makeup,121.13,65.61
+85,Skincare Item 85,Beauty,Skincare,353.3,225.61
+86,Skincare Item 86,Beauty,Skincare,475.84,236.22
+87,Skincare Item 87,Beauty,Skincare,211.61,150.99
+88,Makeup Item 88,Beauty,Makeup,263.55,193.23
+89,Skincare Item 89,Beauty,Skincare,633.88,296.13
+90,Skincare Item 90,Beauty,Skincare,244.8,119.12
+91,Makeup Item 91,Beauty,Makeup,215.97,112.8
+92,Makeup Item 92,Beauty,Makeup,571.21,286.56
+93,Skincare Item 93,Beauty,Skincare,233.96,178.27
+94,Skincare Item 94,Beauty,Skincare,22.69,16.75
+95,Makeup Item 95,Beauty,Makeup,288.16,154.45
+96,Haircare Item 96,Beauty,Haircare,388.87,231.3
+97,Outdoor Item 97,Sports,Outdoor,52.27,29.32
+98,Team Sports Item 98,Sports,Team Sports,68.82,50.04
+99,Fitness Item 99,Sports,Fitness,231.08,155.83
+100,Fitness Item 100,Sports,Fitness,269.62,163.24
+101,Team Sports Item 101,Sports,Team Sports,433.8,230.15
+102,Team Sports Item 102,Sports,Team Sports,47.26,24.5
+103,Team Sports Item 103,Sports,Team Sports,433.62,286.26
+104,Fitness Item 104,Sports,Fitness,51.46,30.43
+105,Outdoor Item 105,Sports,Outdoor,250.51,185.63
+106,Team Sports Item 106,Sports,Team Sports,440.12,223.8
+107,Fitness Item 107,Sports,Fitness,12.44,8.74
+108,Fitness Item 108,Sports,Fitness,115.07,53.33
+109,Team Sports Item 109,Sports,Team Sports,321.5,157.58
+110,Outdoor Item 110,Sports,Outdoor,76.72,54.25
+111,Outdoor Item 111,Sports,Outdoor,311.09,221.22
+112,Fitness Item 112,Sports,Fitness,175.1,103.83
+113,Team Sports Item 113,Sports,Team Sports,46.28,23.84
+114,Team Sports Item 114,Sports,Team Sports,332.05,190.12
+115,Team Sports Item 115,Sports,Team Sports,194.63,111.24
+116,Team Sports Item 116,Sports,Team Sports,78.18,54.23
+117,Fitness Item 117,Sports,Fitness,512.54,268.81
+118,Fitness Item 118,Sports,Fitness,127.24,72.38
+119,Fitness Item 119,Sports,Fitness,338.66,258.31
+120,Fitness Item 120,Sports,Fitness,237.11,144.17

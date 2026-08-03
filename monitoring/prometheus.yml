@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # FastAPI exposes /health today; add prometheus-fastapi-instrumentator
+  # to the api service and expose /metrics to enable real scraping here.
+  - job_name: "ecommerce_api"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api:8000"]
+
+  # Add a postgres_exporter container and point it at the `postgres`
+  # service to get warehouse-level metrics (connections, query latency,
+  # table sizes, replication lag on RDS, etc.)
+  - job_name: "postgres"
+    static_configs:
+      - targets: ["postgres_exporter:9187"]

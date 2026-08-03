@@ -1,0 +1,501 @@
+customer_id,first_name,last_name,email,country,city,signup_date,customer_segment
+1,Ivan,Khan,ivan.khan1@example.com,Brazil,Riverside,2024-08-16,Returning
+2,Ivan,Muller,ivan.muller2@example.com,Japan,Metro City,2025-08-27,At Risk
+3,Liam,Khan,liam.khan3@example.com,United States,Riverside,2024-08-26,New
+4,Maya,Ivanov,maya.ivanov4@example.com,Japan,Hillside,2024-08-13,At Risk
+5,Zoe,Lopez,zoe.lopez5@example.com,India,Riverside,2025-12-15,At Risk
+6,Elena,Patel,elena.patel6@example.com,United Kingdom,Riverside,2026-02-20,VIP
+7,Ivan,Smith,ivan.smith7@example.com,Canada,Metro City,2025-01-02,VIP
+8,Zoe,Lopez,zoe.lopez8@example.com,India,Hillside,2025-07-03,New
+9,Mei,Smith,mei.smith9@example.com,Japan,Lakeview,2026-04-29,VIP
+10,Maya,Ivanov,maya.ivanov10@example.com,United States,Metro City,2025-11-08,Returning
+11,Kabir,Smith,kabir.smith11@example.com,Germany,Metro City,2025-01-24,VIP
+12,Nina,Muller,nina.muller12@example.com,UAE,Riverside,2025-01-14,VIP
+13,Maya,Muller,maya.muller13@example.com,Brazil,Metro City,2025-09-15,Returning
+14,Leo,Garcia,leo.garcia14@example.com,France,Hillside,2024-10-03,Returning
+15,Elena,Sato,elena.sato15@example.com,India,Riverside,2026-04-21,New
+16,Elena,Silva,elena.silva16@example.com,Brazil,Metro City,2024-08-04,VIP
+17,Maya,Muller,maya.muller17@example.com,France,Hillside,2026-06-24,At Risk
+18,Sara,Patel,sara.patel18@example.com,United Kingdom,Riverside,2026-02-01,VIP
+19,Yusuf,Rossi,yusuf.rossi19@example.com,Canada,Lakeview,2024-08-12,Returning
+20,Arjun,Smith,arjun.smith20@example.com,India,Metro City,2024-06-05,Returning
+21,Yusuf,Rossi,yusuf.rossi21@example.com,United States,Hillside,2025-01-25,At Risk
+22,Zoe,Ali,zoe.ali22@example.com,India,Metro City,2025-11-29,VIP
+23,Elena,Smith,elena.smith23@example.com,Brazil,Hillside,2024-06-10,At Risk
+24,Aria,Ivanov,aria.ivanov24@example.com,Brazil,Downtown,2026-02-19,Returning
+25,Ivan,Sato,ivan.sato25@example.com,Brazil,Downtown,2025-09-15,Returning
+26,Sara,Novak,sara.novak26@example.com,United Kingdom,Downtown,2026-03-08,New
+27,Elena,Kim,elena.kim27@example.com,India,Metro City,2025-01-06,VIP
+28,Leo,Khan,leo.khan28@example.com,Germany,Downtown,2024-03-21,New
+29,Arjun,Sato,arjun.sato29@example.com,United States,Downtown,2026-02-23,Returning
+30,Sara,Muller,sara.muller30@example.com,France,Downtown,2024-06-18,VIP
+31,Yusuf,Chen,yusuf.chen31@example.com,Japan,Riverside,2025-12-31,VIP
+32,Mei,Muller,mei.muller32@example.com,UAE,Hillside,2026-07-10,At Risk
+33,Ivan,Chen,ivan.chen33@example.com,Germany,Metro City,2024-12-12,New
+34,Leo,Rossi,leo.rossi34@example.com,Germany,Metro City,2024-03-13,New
+35,Leo,Smith,leo.smith35@example.com,India,Lakeview,2024-03-13,Returning
+36,Zoe,Muller,zoe.muller36@example.com,France,Riverside,2025-07-06,Returning
+37,Arjun,Chen,arjun.chen37@example.com,France,Hillside,2024-07-13,New
+38,Ivan,Muller,ivan.muller38@example.com,Canada,Lakeview,2025-03-09,At Risk
+39,Nina,Sato,nina.sato39@example.com,India,Metro City,2024-03-03,At Risk
+40,Elena,Lopez,elena.lopez40@example.com,United States,Riverside,2024-07-15,Returning
+41,Nina,Garcia,nina.garcia41@example.com,Canada,Riverside,2024-10-12,At Risk
+42,Leo,Sato,leo.sato42@example.com,United States,Hillside,2026-04-07,New
+43,Liam,Muller,liam.muller43@example.com,Japan,Metro City,2024-04-05,Returning
+44,Omar,Silva,omar.silva44@example.com,France,Hillside,2024-08-06,At Risk
+45,Liam,Garcia,liam.garcia45@example.com,Canada,Metro City,2025-02-03,VIP
+46,Nina,Patel,nina.patel46@example.com,Canada,Downtown,2025-11-08,At Risk
+47,Sara,Chen,sara.chen47@example.com,Brazil,Riverside,2024-02-29,New
+48,Elena,Khan,elena.khan48@example.com,India,Downtown,2025-05-03,Returning
+49,Liam,Ali,liam.ali49@example.com,United States,Riverside,2024-03-11,New
+50,Leo,Silva,leo.silva50@example.com,United States,Downtown,2024-09-09,New
+51,Noor,Silva,noor.silva51@example.com,Australia,Downtown,2025-06-19,VIP
+52,Zoe,Chen,zoe.chen52@example.com,UAE,Riverside,2024-09-28,At Risk
+53,Sara,Muller,sara.muller53@example.com,Brazil,Hillside,2024-11-19,New
+54,Aria,Kim,aria.kim54@example.com,Australia,Downtown,2024-04-12,New
+55,Maya,Ali,maya.ali55@example.com,Brazil,Riverside,2024-12-23,New
+56,Leo,Novak,leo.novak56@example.com,Brazil,Riverside,2025-03-24,VIP
+57,Aria,Muller,aria.muller57@example.com,Japan,Lakeview,2025-11-10,New
+58,Sara,Patel,sara.patel58@example.com,United States,Metro City,2026-01-30,Returning
+59,Zoe,Patel,zoe.patel59@example.com,Australia,Riverside,2026-01-04,VIP
+60,Maya,Muller,maya.muller60@example.com,Brazil,Downtown,2025-05-15,VIP
+61,Liam,Smith,liam.smith61@example.com,Canada,Lakeview,2024-02-15,New
+62,Elena,Lopez,elena.lopez62@example.com,United Kingdom,Lakeview,2024-06-14,At Risk
+63,Yusuf,Ali,yusuf.ali63@example.com,India,Metro City,2024-03-18,Returning
+64,Liam,Sato,liam.sato64@example.com,UAE,Downtown,2025-07-19,Returning
+65,Yusuf,Garcia,yusuf.garcia65@example.com,India,Lakeview,2025-01-08,New
+66,Diego,Chen,diego.chen66@example.com,Germany,Metro City,2024-12-28,At Risk
+67,Sara,Chen,sara.chen67@example.com,United Kingdom,Riverside,2026-06-21,At Risk
+68,Aria,Garcia,aria.garcia68@example.com,UAE,Hillside,2026-04-01,Returning
+69,Zoe,Garcia,zoe.garcia69@example.com,United States,Hillside,2026-06-12,New
+70,Arjun,Chen,arjun.chen70@example.com,Germany,Hillside,2024-12-24,VIP
+71,Leo,Chen,leo.chen71@example.com,India,Riverside,2025-02-12,VIP
+72,Zoe,Sato,zoe.sato72@example.com,United States,Lakeview,2024-12-25,At Risk
+73,Elena,Khan,elena.khan73@example.com,United States,Lakeview,2024-07-01,VIP
+74,Liam,Smith,liam.smith74@example.com,Australia,Hillside,2024-12-19,VIP
+75,Yusuf,Rossi,yusuf.rossi75@example.com,Japan,Metro City,2025-01-29,Returning
+76,Zoe,Khan,zoe.khan76@example.com,Canada,Metro City,2025-06-16,Returning
+77,Diego,Silva,diego.silva77@example.com,United States,Lakeview,2025-09-30,VIP
+78,Ivan,Ivanov,ivan.ivanov78@example.com,Brazil,Downtown,2024-11-12,At Risk
+79,Elena,Silva,elena.silva79@example.com,Brazil,Downtown,2024-05-10,Returning
+80,Yusuf,Muller,yusuf.muller80@example.com,Canada,Riverside,2025-09-22,VIP
+81,Mei,Ali,mei.ali81@example.com,India,Lakeview,2024-10-20,Returning
+82,Yusuf,Lopez,yusuf.lopez82@example.com,Australia,Downtown,2025-11-01,VIP
+83,Nina,Kim,nina.kim83@example.com,France,Riverside,2025-06-07,At Risk
+84,Omar,Muller,omar.muller84@example.com,United States,Lakeview,2025-06-11,VIP
+85,Noor,Sato,noor.sato85@example.com,Germany,Lakeview,2024-08-18,Returning
+86,Sara,Khan,sara.khan86@example.com,India,Riverside,2025-05-01,New
+87,Nina,Silva,nina.silva87@example.com,Australia,Riverside,2026-01-05,At Risk
+88,Arjun,Silva,arjun.silva88@example.com,Germany,Riverside,2025-11-02,New
+89,Ivan,Lopez,ivan.lopez89@example.com,Canada,Riverside,2024-06-29,At Risk
+90,Liam,Ali,liam.ali90@example.com,Germany,Metro City,2025-04-12,Returning
+91,Nina,Muller,nina.muller91@example.com,Japan,Downtown,2025-09-01,VIP
+92,Nina,Rossi,nina.rossi92@example.com,Japan,Hillside,2026-04-30,At Risk
+93,Omar,Ivanov,omar.ivanov93@example.com,France,Hillside,2024-09-22,Returning
+94,Zoe,Lopez,zoe.lopez94@example.com,Japan,Hillside,2025-10-03,Returning
+95,Zoe,Kim,zoe.kim95@example.com,United States,Lakeview,2024-08-28,VIP
+96,Elena,Novak,elena.novak96@example.com,Japan,Metro City,2024-05-21,Returning
+97,Leo,Silva,leo.silva97@example.com,United Kingdom,Riverside,2024-03-06,At Risk
+98,Yusuf,Novak,yusuf.novak98@example.com,Japan,Hillside,2025-03-01,New
+99,Maya,Sato,maya.sato99@example.com,Canada,Hillside,2026-07-15,New
+100,Mei,Kim,mei.kim100@example.com,India,Lakeview,2024-11-01,At Risk
+101,Yusuf,Ali,yusuf.ali101@example.com,Japan,Downtown,2026-07-08,Returning
+102,Arjun,Chen,arjun.chen102@example.com,Brazil,Hillside,2025-05-12,New
+103,Mei,Novak,mei.novak103@example.com,Canada,Riverside,2026-05-10,At Risk
+104,Sara,Rossi,sara.rossi104@example.com,Japan,Metro City,2026-07-17,At Risk
+105,Aria,Smith,aria.smith105@example.com,Canada,Riverside,2026-06-06,At Risk
+106,Omar,Khan,omar.khan106@example.com,Brazil,Hillside,2024-12-01,Returning
+107,Nina,Novak,nina.novak107@example.com,UAE,Hillside,2024-10-11,At Risk
+108,Zoe,Sato,zoe.sato108@example.com,United States,Hillside,2024-01-20,New
+109,Diego,Chen,diego.chen109@example.com,United States,Metro City,2026-02-11,New
+110,Leo,Chen,leo.chen110@example.com,India,Downtown,2024-06-05,Returning
+111,Sara,Kim,sara.kim111@example.com,United States,Downtown,2024-08-11,At Risk
+112,Zoe,Lopez,zoe.lopez112@example.com,UAE,Riverside,2025-09-12,New
+113,Omar,Patel,omar.patel113@example.com,United States,Downtown,2024-01-27,VIP
+114,Mei,Silva,mei.silva114@example.com,Germany,Metro City,2025-08-29,Returning
+115,Ivan,Ivanov,ivan.ivanov115@example.com,Brazil,Downtown,2026-04-04,New
+116,Liam,Novak,liam.novak116@example.com,Japan,Hillside,2025-11-08,VIP
+117,Noor,Ali,noor.ali117@example.com,UAE,Metro City,2026-05-19,At Risk
+118,Arjun,Smith,arjun.smith118@example.com,Canada,Lakeview,2025-10-12,At Risk
+119,Sara,Silva,sara.silva119@example.com,United Kingdom,Downtown,2025-10-28,VIP
+120,Arjun,Kim,arjun.kim120@example.com,Canada,Downtown,2024-10-01,VIP
+121,Leo,Sato,leo.sato121@example.com,United States,Lakeview,2026-06-21,At Risk
+122,Leo,Lopez,leo.lopez122@example.com,France,Downtown,2025-09-16,At Risk
+123,Elena,Khan,elena.khan123@example.com,France,Lakeview,2024-07-05,At Risk
+124,Maya,Novak,maya.novak124@example.com,Brazil,Lakeview,2024-10-13,VIP
+125,Aria,Ali,aria.ali125@example.com,Germany,Metro City,2024-09-04,At Risk
+126,Arjun,Ali,arjun.ali126@example.com,Germany,Hillside,2025-10-23,At Risk
+127,Nina,Lopez,nina.lopez127@example.com,India,Metro City,2024-10-28,Returning
+128,Mei,Ivanov,mei.ivanov128@example.com,Germany,Lakeview,2025-11-10,VIP
+129,Arjun,Ali,arjun.ali129@example.com,Japan,Lakeview,2025-03-11,VIP
+130,Diego,Ivanov,diego.ivanov130@example.com,France,Lakeview,2024-11-09,VIP
+131,Leo,Smith,leo.smith131@example.com,Germany,Lakeview,2024-05-02,Returning
+132,Maya,Chen,maya.chen132@example.com,France,Lakeview,2026-01-11,VIP
+133,Ivan,Sato,ivan.sato133@example.com,Germany,Lakeview,2024-08-20,VIP
+134,Omar,Patel,omar.patel134@example.com,India,Downtown,2024-05-09,VIP
+135,Liam,Khan,liam.khan135@example.com,Japan,Lakeview,2025-12-15,Returning
+136,Arjun,Smith,arjun.smith136@example.com,India,Downtown,2024-10-18,At Risk
+137,Arjun,Kim,arjun.kim137@example.com,UAE,Riverside,2024-02-22,VIP
+138,Arjun,Smith,arjun.smith138@example.com,United States,Hillside,2025-05-18,New
+139,Liam,Garcia,liam.garcia139@example.com,United Kingdom,Downtown,2024-11-07,New
+140,Leo,Smith,leo.smith140@example.com,Japan,Hillside,2025-09-12,Returning
+141,Mei,Kim,mei.kim141@example.com,France,Lakeview,2026-05-30,At Risk
+142,Kabir,Rossi,kabir.rossi142@example.com,Australia,Metro City,2025-09-16,New
+143,Maya,Muller,maya.muller143@example.com,Germany,Lakeview,2025-11-07,New
+144,Omar,Chen,omar.chen144@example.com,United Kingdom,Downtown,2024-03-17,Returning
+145,Aria,Silva,aria.silva145@example.com,France,Downtown,2025-04-26,VIP
+146,Liam,Chen,liam.chen146@example.com,Brazil,Lakeview,2025-12-20,At Risk
+147,Noor,Muller,noor.muller147@example.com,Germany,Lakeview,2026-03-17,Returning
+148,Yusuf,Smith,yusuf.smith148@example.com,Japan,Riverside,2025-10-25,Returning
+149,Zoe,Sato,zoe.sato149@example.com,United Kingdom,Metro City,2024-03-02,Returning
+150,Kabir,Rossi,kabir.rossi150@example.com,Australia,Lakeview,2025-03-25,New
+151,Nina,Ivanov,nina.ivanov151@example.com,Brazil,Hillside,2024-10-05,At Risk
+152,Nina,Smith,nina.smith152@example.com,Australia,Metro City,2026-06-29,At Risk
+153,Elena,Rossi,elena.rossi153@example.com,Brazil,Metro City,2024-04-03,Returning
+154,Aria,Lopez,aria.lopez154@example.com,Brazil,Downtown,2024-02-11,Returning
+155,Arjun,Ali,arjun.ali155@example.com,France,Lakeview,2024-07-04,At Risk
+156,Arjun,Smith,arjun.smith156@example.com,France,Lakeview,2025-02-22,VIP
+157,Elena,Muller,elena.muller157@example.com,United States,Riverside,2024-12-03,At Risk
+158,Arjun,Patel,arjun.patel158@example.com,Canada,Downtown,2024-02-07,At Risk
+159,Noor,Novak,noor.novak159@example.com,Brazil,Lakeview,2024-04-28,At Risk
+160,Aria,Muller,aria.muller160@example.com,Japan,Hillside,2025-02-27,New
+161,Maya,Ali,maya.ali161@example.com,UAE,Downtown,2026-02-13,At Risk
+162,Nina,Lopez,nina.lopez162@example.com,India,Riverside,2024-09-30,Returning
+163,Kabir,Kim,kabir.kim163@example.com,France,Metro City,2024-01-30,Returning
+164,Omar,Patel,omar.patel164@example.com,Japan,Metro City,2025-07-19,At Risk
+165,Noor,Chen,noor.chen165@example.com,United States,Hillside,2024-04-30,Returning
+166,Arjun,Ivanov,arjun.ivanov166@example.com,Brazil,Downtown,2025-12-23,VIP
+167,Yusuf,Sato,yusuf.sato167@example.com,France,Hillside,2024-09-06,At Risk
+168,Sara,Silva,sara.silva168@example.com,Germany,Downtown,2025-06-04,Returning
+169,Noor,Patel,noor.patel169@example.com,Canada,Lakeview,2026-03-17,VIP
+170,Aria,Patel,aria.patel170@example.com,Brazil,Downtown,2025-08-16,At Risk
+171,Sara,Kim,sara.kim171@example.com,Japan,Hillside,2024-12-19,VIP
+172,Mei,Kim,mei.kim172@example.com,UAE,Riverside,2025-12-15,Returning
+173,Mei,Chen,mei.chen173@example.com,Canada,Metro City,2024-11-21,At Risk
+174,Mei,Silva,mei.silva174@example.com,United Kingdom,Hillside,2024-02-07,Returning
+175,Elena,Sato,elena.sato175@example.com,United States,Hillside,2024-04-12,At Risk
+176,Aria,Ivanov,aria.ivanov176@example.com,United Kingdom,Hillside,2026-06-10,Returning
+177,Noor,Kim,noor.kim177@example.com,Brazil,Lakeview,2025-09-30,At Risk
+178,Noor,Sato,noor.sato178@example.com,UAE,Downtown,2025-01-24,VIP
+179,Arjun,Sato,arjun.sato179@example.com,Japan,Metro City,2025-09-24,New
+180,Leo,Muller,leo.muller180@example.com,Brazil,Riverside,2026-02-03,New
+181,Yusuf,Smith,yusuf.smith181@example.com,United States,Hillside,2024-06-19,VIP
+182,Aria,Khan,aria.khan182@example.com,UAE,Metro City,2024-10-27,VIP
+183,Diego,Silva,diego.silva183@example.com,United Kingdom,Riverside,2025-06-27,At Risk
+184,Omar,Garcia,omar.garcia184@example.com,United Kingdom,Metro City,2025-09-16,At Risk
+185,Leo,Kim,leo.kim185@example.com,Australia,Riverside,2024-08-25,At Risk
+186,Zoe,Kim,zoe.kim186@example.com,Brazil,Metro City,2026-07-09,At Risk
+187,Kabir,Muller,kabir.muller187@example.com,Japan,Riverside,2024-03-16,At Risk
+188,Diego,Rossi,diego.rossi188@example.com,Brazil,Hillside,2025-12-07,VIP
+189,Nina,Sato,nina.sato189@example.com,Brazil,Riverside,2025-01-28,At Risk
+190,Ivan,Chen,ivan.chen190@example.com,Canada,Downtown,2025-01-02,VIP
+191,Kabir,Khan,kabir.khan191@example.com,Canada,Lakeview,2024-01-09,New
+192,Arjun,Sato,arjun.sato192@example.com,Brazil,Riverside,2025-09-13,VIP
+193,Leo,Muller,leo.muller193@example.com,Germany,Downtown,2024-09-13,Returning
+194,Ivan,Muller,ivan.muller194@example.com,India,Lakeview,2026-03-18,At Risk
+195,Liam,Rossi,liam.rossi195@example.com,UAE,Riverside,2024-04-02,VIP
+196,Elena,Ivanov,elena.ivanov196@example.com,Canada,Riverside,2024-07-24,Returning
+197,Diego,Ali,diego.ali197@example.com,Japan,Lakeview,2026-04-30,Returning
+198,Zoe,Sato,zoe.sato198@example.com,France,Lakeview,2026-02-03,VIP
+199,Ivan,Kim,ivan.kim199@example.com,United States,Riverside,2026-02-11,Returning
+200,Mei,Sato,mei.sato200@example.com,Japan,Lakeview,2024-04-02,At Risk
+201,Aria,Patel,aria.patel201@example.com,Japan,Metro City,2025-04-10,VIP
+202,Zoe,Rossi,zoe.rossi202@example.com,Canada,Lakeview,2024-04-20,Returning
+203,Arjun,Khan,arjun.khan203@example.com,Australia,Downtown,2024-12-01,Returning
+204,Noor,Muller,noor.muller204@example.com,France,Lakeview,2025-10-26,At Risk
+205,Ivan,Garcia,ivan.garcia205@example.com,India,Metro City,2024-11-07,At Risk
+206,Ivan,Smith,ivan.smith206@example.com,Germany,Downtown,2024-05-18,At Risk
+207,Nina,Novak,nina.novak207@example.com,Japan,Hillside,2025-08-24,Returning
+208,Yusuf,Muller,yusuf.muller208@example.com,United States,Hillside,2025-09-22,At Risk
+209,Zoe,Khan,zoe.khan209@example.com,UAE,Riverside,2025-03-30,At Risk
+210,Leo,Sato,leo.sato210@example.com,UAE,Metro City,2025-12-03,VIP
+211,Diego,Khan,diego.khan211@example.com,Canada,Lakeview,2024-07-13,New
+212,Nina,Smith,nina.smith212@example.com,Germany,Downtown,2024-01-22,New
+213,Elena,Chen,elena.chen213@example.com,United Kingdom,Downtown,2024-07-29,New
+214,Maya,Rossi,maya.rossi214@example.com,Germany,Riverside,2024-12-02,Returning
+215,Aria,Patel,aria.patel215@example.com,United Kingdom,Riverside,2025-07-07,VIP
+216,Omar,Smith,omar.smith216@example.com,India,Riverside,2024-01-16,VIP
+217,Leo,Rossi,leo.rossi217@example.com,UAE,Metro City,2024-06-27,VIP
+218,Liam,Garcia,liam.garcia218@example.com,Canada,Downtown,2024-04-26,New
+219,Arjun,Kim,arjun.kim219@example.com,UAE,Downtown,2025-08-30,New
+220,Nina,Ali,nina.ali220@example.com,Germany,Downtown,2024-02-14,VIP
+221,Nina,Muller,nina.muller221@example.com,India,Metro City,2025-05-05,At Risk
+222,Yusuf,Muller,yusuf.muller222@example.com,United States,Hillside,2025-12-30,At Risk
+223,Noor,Smith,noor.smith223@example.com,UAE,Downtown,2024-05-31,New
+224,Sara,Patel,sara.patel224@example.com,Australia,Downtown,2025-07-15,VIP
+225,Mei,Rossi,mei.rossi225@example.com,Japan,Lakeview,2025-04-09,At Risk
+226,Ivan,Lopez,ivan.lopez226@example.com,United States,Downtown,2026-01-08,Returning
+227,Yusuf,Kim,yusuf.kim227@example.com,Germany,Hillside,2024-12-13,At Risk
+228,Mei,Silva,mei.silva228@example.com,United States,Lakeview,2025-03-13,VIP
+229,Zoe,Novak,zoe.novak229@example.com,United Kingdom,Hillside,2024-03-09,New
+230,Noor,Smith,noor.smith230@example.com,Canada,Metro City,2026-02-01,VIP
+231,Sara,Ali,sara.ali231@example.com,India,Downtown,2025-07-29,VIP
+232,Ivan,Silva,ivan.silva232@example.com,UAE,Hillside,2026-06-07,New
+233,Kabir,Rossi,kabir.rossi233@example.com,Brazil,Lakeview,2024-04-16,Returning
+234,Sara,Muller,sara.muller234@example.com,France,Riverside,2026-05-17,New
+235,Diego,Sato,diego.sato235@example.com,Japan,Lakeview,2024-04-27,VIP
+236,Leo,Lopez,leo.lopez236@example.com,Canada,Downtown,2026-02-24,New
+237,Zoe,Khan,zoe.khan237@example.com,United Kingdom,Lakeview,2025-12-20,VIP
+238,Elena,Novak,elena.novak238@example.com,India,Riverside,2026-06-09,Returning
+239,Mei,Smith,mei.smith239@example.com,United Kingdom,Metro City,2024-04-03,Returning
+240,Mei,Silva,mei.silva240@example.com,France,Lakeview,2024-06-10,VIP
+241,Kabir,Ivanov,kabir.ivanov241@example.com,UAE,Downtown,2025-09-02,New
+242,Liam,Garcia,liam.garcia242@example.com,United Kingdom,Downtown,2024-02-20,New
+243,Zoe,Kim,zoe.kim243@example.com,Canada,Hillside,2025-09-13,At Risk
+244,Yusuf,Patel,yusuf.patel244@example.com,Germany,Downtown,2024-04-26,VIP
+245,Yusuf,Smith,yusuf.smith245@example.com,Brazil,Downtown,2025-05-13,VIP
+246,Liam,Chen,liam.chen246@example.com,Canada,Downtown,2024-02-26,New
+247,Maya,Patel,maya.patel247@example.com,Germany,Riverside,2026-02-21,VIP
+248,Kabir,Novak,kabir.novak248@example.com,United States,Metro City,2025-05-24,At Risk
+249,Omar,Garcia,omar.garcia249@example.com,Canada,Downtown,2025-12-21,Returning
+250,Diego,Smith,diego.smith250@example.com,Canada,Metro City,2025-03-22,New
+251,Nina,Smith,nina.smith251@example.com,UAE,Downtown,2025-03-15,At Risk
+252,Yusuf,Patel,yusuf.patel252@example.com,United States,Hillside,2024-01-22,VIP
+253,Omar,Lopez,omar.lopez253@example.com,Australia,Hillside,2026-05-01,VIP
+254,Noor,Silva,noor.silva254@example.com,United States,Riverside,2025-03-22,At Risk
+255,Noor,Silva,noor.silva255@example.com,Brazil,Lakeview,2024-08-14,VIP
+256,Omar,Smith,omar.smith256@example.com,Japan,Metro City,2025-06-27,Returning
+257,Diego,Novak,diego.novak257@example.com,United Kingdom,Riverside,2024-04-15,Returning
+258,Zoe,Chen,zoe.chen258@example.com,United Kingdom,Downtown,2024-06-05,New
+259,Omar,Lopez,omar.lopez259@example.com,France,Hillside,2026-02-11,At Risk
+260,Elena,Sato,elena.sato260@example.com,UAE,Riverside,2025-03-26,New
+261,Arjun,Kim,arjun.kim261@example.com,Brazil,Lakeview,2025-08-28,New
+262,Diego,Ali,diego.ali262@example.com,United States,Lakeview,2025-04-17,At Risk
+263,Liam,Khan,liam.khan263@example.com,UAE,Lakeview,2024-03-19,New
+264,Mei,Kim,mei.kim264@example.com,Australia,Downtown,2026-03-21,New
+265,Nina,Lopez,nina.lopez265@example.com,Australia,Riverside,2024-11-25,At Risk
+266,Sara,Khan,sara.khan266@example.com,France,Metro City,2026-04-10,VIP
+267,Noor,Ali,noor.ali267@example.com,United Kingdom,Metro City,2024-09-10,At Risk
+268,Nina,Ali,nina.ali268@example.com,Japan,Downtown,2024-06-11,VIP
+269,Diego,Patel,diego.patel269@example.com,Canada,Hillside,2026-03-04,VIP
+270,Liam,Lopez,liam.lopez270@example.com,UAE,Metro City,2024-12-03,New
+271,Mei,Patel,mei.patel271@example.com,Brazil,Downtown,2026-06-13,Returning
+272,Elena,Smith,elena.smith272@example.com,Australia,Riverside,2026-07-27,VIP
+273,Kabir,Muller,kabir.muller273@example.com,Canada,Riverside,2025-09-01,New
+274,Kabir,Ali,kabir.ali274@example.com,Canada,Lakeview,2026-04-12,Returning
+275,Noor,Muller,noor.muller275@example.com,Canada,Downtown,2025-01-05,New
+276,Diego,Patel,diego.patel276@example.com,United Kingdom,Riverside,2024-12-15,At Risk
+277,Maya,Chen,maya.chen277@example.com,United Kingdom,Riverside,2024-03-20,VIP
+278,Ivan,Ali,ivan.ali278@example.com,Japan,Downtown,2024-02-08,VIP
+279,Sara,Rossi,sara.rossi279@example.com,Canada,Riverside,2024-06-15,Returning
+280,Omar,Ivanov,omar.ivanov280@example.com,France,Metro City,2025-02-24,VIP
+281,Leo,Kim,leo.kim281@example.com,Australia,Lakeview,2026-02-09,At Risk
+282,Leo,Ali,leo.ali282@example.com,Germany,Lakeview,2026-04-08,At Risk
+283,Maya,Novak,maya.novak283@example.com,Australia,Hillside,2025-04-17,VIP
+284,Mei,Ali,mei.ali284@example.com,Japan,Hillside,2024-06-14,Returning
+285,Sara,Sato,sara.sato285@example.com,Brazil,Metro City,2025-10-18,At Risk
+286,Diego,Ali,diego.ali286@example.com,United States,Downtown,2026-05-21,New
+287,Kabir,Smith,kabir.smith287@example.com,United Kingdom,Lakeview,2025-04-05,Returning
+288,Yusuf,Smith,yusuf.smith288@example.com,Germany,Hillside,2026-06-24,VIP
+289,Aria,Silva,aria.silva289@example.com,India,Hillside,2025-05-29,VIP
+290,Leo,Silva,leo.silva290@example.com,United States,Lakeview,2024-08-17,New
+291,Elena,Smith,elena.smith291@example.com,UAE,Riverside,2024-05-20,New
+292,Kabir,Sato,kabir.sato292@example.com,France,Riverside,2026-02-16,At Risk
+293,Nina,Rossi,nina.rossi293@example.com,India,Metro City,2024-01-20,VIP
+294,Maya,Sato,maya.sato294@example.com,United Kingdom,Downtown,2026-01-14,At Risk
+295,Ivan,Lopez,ivan.lopez295@example.com,Brazil,Riverside,2024-11-04,New
+296,Liam,Chen,liam.chen296@example.com,Canada,Downtown,2025-04-13,New
+297,Ivan,Sato,ivan.sato297@example.com,France,Downtown,2025-07-02,New
+298,Leo,Ivanov,leo.ivanov298@example.com,United Kingdom,Lakeview,2025-03-15,New
+299,Diego,Chen,diego.chen299@example.com,Australia,Hillside,2024-07-10,New
+300,Diego,Smith,diego.smith300@example.com,Japan,Downtown,2025-06-03,New
+301,Mei,Sato,mei.sato301@example.com,France,Metro City,2025-10-12,At Risk
+302,Diego,Patel,diego.patel302@example.com,India,Lakeview,2026-03-18,New
+303,Diego,Chen,diego.chen303@example.com,United States,Downtown,2026-01-22,VIP
+304,Sara,Khan,sara.khan304@example.com,UAE,Downtown,2024-12-12,Returning
+305,Nina,Ivanov,nina.ivanov305@example.com,France,Riverside,2026-04-10,Returning
+306,Noor,Ivanov,noor.ivanov306@example.com,France,Metro City,2024-10-27,Returning
+307,Liam,Lopez,liam.lopez307@example.com,Germany,Metro City,2024-11-19,VIP
+308,Mei,Sato,mei.sato308@example.com,Japan,Hillside,2024-09-16,New
+309,Maya,Patel,maya.patel309@example.com,UAE,Metro City,2026-06-05,VIP
+310,Zoe,Smith,zoe.smith310@example.com,UAE,Hillside,2026-06-29,At Risk
+311,Nina,Silva,nina.silva311@example.com,UAE,Riverside,2025-05-23,At Risk
+312,Diego,Lopez,diego.lopez312@example.com,Japan,Lakeview,2026-03-31,New
+313,Yusuf,Smith,yusuf.smith313@example.com,Canada,Downtown,2026-04-22,Returning
+314,Kabir,Novak,kabir.novak314@example.com,United States,Metro City,2024-12-01,VIP
+315,Kabir,Kim,kabir.kim315@example.com,Australia,Hillside,2024-06-19,At Risk
+316,Diego,Kim,diego.kim316@example.com,India,Lakeview,2025-09-21,At Risk
+317,Zoe,Muller,zoe.muller317@example.com,India,Metro City,2025-11-18,At Risk
+318,Diego,Ali,diego.ali318@example.com,United Kingdom,Metro City,2024-05-26,At Risk
+319,Liam,Garcia,liam.garcia319@example.com,United States,Riverside,2026-03-08,VIP
+320,Diego,Silva,diego.silva320@example.com,Australia,Metro City,2025-09-11,Returning
+321,Nina,Novak,nina.novak321@example.com,UAE,Hillside,2026-02-20,New
+322,Sara,Ali,sara.ali322@example.com,UAE,Hillside,2024-11-17,VIP
+323,Leo,Smith,leo.smith323@example.com,India,Riverside,2025-05-26,At Risk
+324,Ivan,Patel,ivan.patel324@example.com,Brazil,Hillside,2024-08-07,VIP
+325,Arjun,Chen,arjun.chen325@example.com,United States,Riverside,2026-05-23,New
+326,Nina,Garcia,nina.garcia326@example.com,France,Metro City,2026-04-09,VIP
+327,Diego,Ivanov,diego.ivanov327@example.com,United States,Downtown,2025-07-09,VIP
+328,Kabir,Sato,kabir.sato328@example.com,United Kingdom,Riverside,2026-03-23,VIP
+329,Leo,Smith,leo.smith329@example.com,Germany,Riverside,2024-08-30,At Risk
+330,Aria,Novak,aria.novak330@example.com,Japan,Downtown,2025-01-12,At Risk
+331,Sara,Rossi,sara.rossi331@example.com,United States,Metro City,2024-11-12,At Risk
+332,Arjun,Ali,arjun.ali332@example.com,Canada,Hillside,2026-04-23,New
+333,Sara,Novak,sara.novak333@example.com,United States,Hillside,2025-04-22,VIP
+334,Sara,Sato,sara.sato334@example.com,Japan,Downtown,2024-07-05,Returning
+335,Yusuf,Ali,yusuf.ali335@example.com,India,Metro City,2025-06-14,Returning
+336,Kabir,Garcia,kabir.garcia336@example.com,United Kingdom,Lakeview,2025-12-27,Returning
+337,Diego,Ali,diego.ali337@example.com,Brazil,Metro City,2024-09-13,Returning
+338,Zoe,Garcia,zoe.garcia338@example.com,Brazil,Downtown,2025-06-30,New
+339,Omar,Rossi,omar.rossi339@example.com,Australia,Riverside,2024-06-24,VIP
+340,Liam,Sato,liam.sato340@example.com,India,Metro City,2024-02-16,VIP
+341,Maya,Lopez,maya.lopez341@example.com,Australia,Hillside,2025-09-24,New
+342,Arjun,Muller,arjun.muller342@example.com,Japan,Lakeview,2025-10-19,VIP
+343,Arjun,Chen,arjun.chen343@example.com,Canada,Lakeview,2025-04-09,New
+344,Liam,Garcia,liam.garcia344@example.com,France,Hillside,2025-05-10,At Risk
+345,Maya,Novak,maya.novak345@example.com,Australia,Riverside,2024-11-16,VIP
+346,Diego,Silva,diego.silva346@example.com,United Kingdom,Lakeview,2025-06-11,New
+347,Elena,Chen,elena.chen347@example.com,France,Metro City,2024-09-30,At Risk
+348,Leo,Garcia,leo.garcia348@example.com,United States,Metro City,2024-10-24,At Risk
+349,Yusuf,Chen,yusuf.chen349@example.com,United Kingdom,Lakeview,2025-08-14,VIP
+350,Maya,Lopez,maya.lopez350@example.com,United Kingdom,Hillside,2025-06-11,At Risk
+351,Arjun,Patel,arjun.patel351@example.com,France,Metro City,2024-04-02,At Risk
+352,Nina,Chen,nina.chen352@example.com,Germany,Downtown,2024-12-27,New
+353,Liam,Patel,liam.patel353@example.com,France,Downtown,2026-06-22,At Risk
+354,Kabir,Ali,kabir.ali354@example.com,India,Metro City,2025-03-17,Returning
+355,Zoe,Ivanov,zoe.ivanov355@example.com,UAE,Hillside,2025-01-09,New
+356,Mei,Khan,mei.khan356@example.com,Australia,Downtown,2024-07-18,VIP
+357,Kabir,Smith,kabir.smith357@example.com,Canada,Downtown,2025-04-06,VIP
+358,Ivan,Garcia,ivan.garcia358@example.com,United States,Hillside,2025-01-17,VIP
+359,Diego,Lopez,diego.lopez359@example.com,United Kingdom,Riverside,2025-09-08,At Risk
+360,Liam,Khan,liam.khan360@example.com,India,Riverside,2025-12-31,VIP
+361,Arjun,Ali,arjun.ali361@example.com,France,Riverside,2025-09-12,Returning
+362,Elena,Rossi,elena.rossi362@example.com,UAE,Riverside,2025-02-06,VIP
+363,Elena,Ali,elena.ali363@example.com,Japan,Downtown,2025-05-16,VIP
+364,Arjun,Sato,arjun.sato364@example.com,India,Lakeview,2024-12-05,New
+365,Yusuf,Rossi,yusuf.rossi365@example.com,Brazil,Metro City,2025-09-03,At Risk
+366,Zoe,Muller,zoe.muller366@example.com,Australia,Downtown,2024-08-21,New
+367,Arjun,Garcia,arjun.garcia367@example.com,Japan,Downtown,2026-03-04,At Risk
+368,Sara,Sato,sara.sato368@example.com,Germany,Metro City,2025-08-09,New
+369,Maya,Khan,maya.khan369@example.com,France,Lakeview,2025-03-04,Returning
+370,Yusuf,Ivanov,yusuf.ivanov370@example.com,Germany,Hillside,2025-05-28,At Risk
+371,Liam,Ivanov,liam.ivanov371@example.com,United Kingdom,Downtown,2024-07-31,VIP
+372,Arjun,Ali,arjun.ali372@example.com,Canada,Lakeview,2024-06-26,At Risk
+373,Elena,Ali,elena.ali373@example.com,UAE,Lakeview,2025-09-16,At Risk
+374,Maya,Chen,maya.chen374@example.com,Brazil,Downtown,2024-11-01,Returning
+375,Kabir,Lopez,kabir.lopez375@example.com,Brazil,Riverside,2025-12-07,At Risk
+376,Elena,Kim,elena.kim376@example.com,UAE,Downtown,2026-03-25,VIP
+377,Kabir,Smith,kabir.smith377@example.com,Australia,Downtown,2025-01-23,At Risk
+378,Diego,Lopez,diego.lopez378@example.com,United Kingdom,Lakeview,2024-02-13,VIP
+379,Noor,Novak,noor.novak379@example.com,France,Lakeview,2026-02-04,At Risk
+380,Maya,Chen,maya.chen380@example.com,Japan,Lakeview,2025-07-29,VIP
+381,Sara,Smith,sara.smith381@example.com,Australia,Downtown,2024-09-02,Returning
+382,Liam,Muller,liam.muller382@example.com,Japan,Riverside,2025-10-15,Returning
+383,Liam,Smith,liam.smith383@example.com,Canada,Lakeview,2026-01-04,At Risk
+384,Ivan,Muller,ivan.muller384@example.com,United Kingdom,Metro City,2025-07-17,Returning
+385,Yusuf,Muller,yusuf.muller385@example.com,France,Hillside,2025-10-28,Returning
+386,Kabir,Novak,kabir.novak386@example.com,Brazil,Metro City,2026-07-18,New
+387,Leo,Ali,leo.ali387@example.com,India,Riverside,2025-03-03,Returning
+388,Liam,Sato,liam.sato388@example.com,Canada,Hillside,2024-07-09,VIP
+389,Liam,Khan,liam.khan389@example.com,Brazil,Downtown,2025-09-09,New
+390,Elena,Patel,elena.patel390@example.com,France,Downtown,2025-06-20,At Risk
+391,Sara,Sato,sara.sato391@example.com,Japan,Hillside,2024-10-06,Returning
+392,Ivan,Novak,ivan.novak392@example.com,United Kingdom,Hillside,2025-10-25,VIP
+393,Omar,Khan,omar.khan393@example.com,UAE,Lakeview,2025-08-04,Returning
+394,Omar,Rossi,omar.rossi394@example.com,Canada,Hillside,2025-06-11,VIP
+395,Noor,Silva,noor.silva395@example.com,United States,Riverside,2024-05-23,At Risk
+396,Elena,Chen,elena.chen396@example.com,India,Lakeview,2025-01-27,Returning
+397,Nina,Lopez,nina.lopez397@example.com,Brazil,Lakeview,2024-11-05,New
+398,Zoe,Muller,zoe.muller398@example.com,UAE,Riverside,2024-03-04,New
+399,Nina,Patel,nina.patel399@example.com,United Kingdom,Hillside,2025-12-03,VIP
+400,Ivan,Muller,ivan.muller400@example.com,Brazil,Lakeview,2025-09-21,Returning
+401,Leo,Garcia,leo.garcia401@example.com,France,Riverside,2025-04-10,VIP
+402,Yusuf,Ivanov,yusuf.ivanov402@example.com,Japan,Hillside,2026-02-14,Returning
+403,Leo,Muller,leo.muller403@example.com,Australia,Metro City,2025-06-22,At Risk
+404,Diego,Smith,diego.smith404@example.com,Australia,Metro City,2024-03-04,Returning
+405,Sara,Garcia,sara.garcia405@example.com,UAE,Downtown,2025-03-28,New
+406,Maya,Ivanov,maya.ivanov406@example.com,Australia,Hillside,2024-04-03,At Risk
+407,Liam,Kim,liam.kim407@example.com,United Kingdom,Downtown,2025-03-01,At Risk
+408,Liam,Ali,liam.ali408@example.com,France,Lakeview,2026-01-10,New
+409,Mei,Patel,mei.patel409@example.com,India,Riverside,2025-08-15,New
+410,Liam,Silva,liam.silva410@example.com,UAE,Metro City,2025-07-08,New
+411,Noor,Kim,noor.kim411@example.com,India,Lakeview,2025-02-22,Returning
+412,Sara,Lopez,sara.lopez412@example.com,Canada,Lakeview,2026-07-01,At Risk
+413,Nina,Sato,nina.sato413@example.com,Canada,Hillside,2024-03-23,Returning
+414,Diego,Smith,diego.smith414@example.com,United Kingdom,Downtown,2025-02-06,Returning
+415,Leo,Sato,leo.sato415@example.com,India,Metro City,2024-11-01,At Risk
+416,Yusuf,Ali,yusuf.ali416@example.com,Canada,Riverside,2024-09-10,At Risk
+417,Diego,Garcia,diego.garcia417@example.com,Brazil,Riverside,2026-06-15,New
+418,Liam,Lopez,liam.lopez418@example.com,Canada,Downtown,2026-02-23,New
+419,Leo,Chen,leo.chen419@example.com,United States,Metro City,2025-08-31,New
+420,Nina,Rossi,nina.rossi420@example.com,India,Riverside,2026-01-28,New
+421,Mei,Kim,mei.kim421@example.com,Germany,Downtown,2024-08-10,New
+422,Sara,Ali,sara.ali422@example.com,Brazil,Riverside,2026-04-15,VIP
+423,Elena,Chen,elena.chen423@example.com,Brazil,Riverside,2025-11-07,Returning
+424,Yusuf,Patel,yusuf.patel424@example.com,Brazil,Metro City,2025-07-24,Returning
+425,Yusuf,Ali,yusuf.ali425@example.com,France,Metro City,2024-12-18,At Risk
+426,Elena,Ivanov,elena.ivanov426@example.com,Canada,Hillside,2024-06-01,VIP
+427,Mei,Garcia,mei.garcia427@example.com,Japan,Hillside,2024-09-03,Returning
+428,Kabir,Sato,kabir.sato428@example.com,United Kingdom,Hillside,2026-07-25,New
+429,Yusuf,Silva,yusuf.silva429@example.com,Japan,Downtown,2024-05-17,At Risk
+430,Leo,Patel,leo.patel430@example.com,Germany,Lakeview,2025-10-24,New
+431,Nina,Sato,nina.sato431@example.com,UAE,Metro City,2025-07-02,Returning
+432,Liam,Patel,liam.patel432@example.com,Canada,Downtown,2025-09-09,New
+433,Noor,Chen,noor.chen433@example.com,Australia,Downtown,2024-08-10,At Risk
+434,Maya,Sato,maya.sato434@example.com,UAE,Lakeview,2026-07-19,New
+435,Maya,Chen,maya.chen435@example.com,United States,Hillside,2026-07-25,Returning
+436,Maya,Silva,maya.silva436@example.com,Germany,Downtown,2024-11-25,VIP
+437,Mei,Kim,mei.kim437@example.com,Japan,Lakeview,2024-11-11,VIP
+438,Diego,Ali,diego.ali438@example.com,France,Hillside,2024-04-10,At Risk
+439,Elena,Chen,elena.chen439@example.com,UAE,Lakeview,2025-02-27,New
+440,Leo,Ivanov,leo.ivanov440@example.com,United Kingdom,Metro City,2024-09-24,At Risk
+441,Kabir,Garcia,kabir.garcia441@example.com,Germany,Lakeview,2024-08-23,At Risk
+442,Leo,Kim,leo.kim442@example.com,Japan,Lakeview,2024-09-20,At Risk
+443,Arjun,Kim,arjun.kim443@example.com,United Kingdom,Lakeview,2024-06-22,Returning
+444,Arjun,Garcia,arjun.garcia444@example.com,Japan,Metro City,2025-06-20,New
+445,Noor,Sato,noor.sato445@example.com,India,Metro City,2025-02-26,Returning
+446,Leo,Smith,leo.smith446@example.com,United Kingdom,Metro City,2024-08-11,At Risk
+447,Diego,Khan,diego.khan447@example.com,Australia,Downtown,2026-07-23,At Risk
+448,Arjun,Khan,arjun.khan448@example.com,India,Downtown,2025-07-18,At Risk
+449,Aria,Khan,aria.khan449@example.com,Japan,Lakeview,2025-07-02,VIP
+450,Aria,Ali,aria.ali450@example.com,Canada,Riverside,2024-04-19,New
+451,Sara,Chen,sara.chen451@example.com,Germany,Downtown,2025-06-23,VIP
+452,Diego,Patel,diego.patel452@example.com,Canada,Metro City,2025-01-17,At Risk
+453,Nina,Rossi,nina.rossi453@example.com,Germany,Riverside,2024-11-03,New
+454,Liam,Smith,liam.smith454@example.com,Canada,Hillside,2025-01-21,At Risk
+455,Liam,Muller,liam.muller455@example.com,India,Riverside,2024-03-25,At Risk
+456,Yusuf,Muller,yusuf.muller456@example.com,UAE,Downtown,2026-05-28,New
+457,Liam,Chen,liam.chen457@example.com,Germany,Downtown,2025-05-01,VIP
+458,Liam,Smith,liam.smith458@example.com,Brazil,Downtown,2025-07-31,New
+459,Omar,Sato,omar.sato459@example.com,UAE,Metro City,2024-07-31,Returning
+460,Mei,Smith,mei.smith460@example.com,Brazil,Riverside,2025-07-31,Returning
+461,Mei,Muller,mei.muller461@example.com,Japan,Lakeview,2025-01-28,Returning
+462,Noor,Ali,noor.ali462@example.com,UAE,Metro City,2024-04-10,At Risk
+463,Leo,Sato,leo.sato463@example.com,United States,Lakeview,2025-09-11,At Risk
+464,Elena,Khan,elena.khan464@example.com,Brazil,Hillside,2025-05-17,Returning
+465,Diego,Ali,diego.ali465@example.com,Canada,Hillside,2024-07-09,At Risk
+466,Noor,Lopez,noor.lopez466@example.com,Australia,Lakeview,2026-03-28,Returning
+467,Noor,Smith,noor.smith467@example.com,Brazil,Riverside,2025-01-24,Returning
+468,Mei,Novak,mei.novak468@example.com,UAE,Metro City,2024-04-03,New
+469,Kabir,Kim,kabir.kim469@example.com,UAE,Lakeview,2024-04-14,Returning
+470,Noor,Garcia,noor.garcia470@example.com,Canada,Hillside,2025-07-24,At Risk
+471,Ivan,Khan,ivan.khan471@example.com,United States,Lakeview,2025-07-21,New
+472,Elena,Sato,elena.sato472@example.com,Canada,Metro City,2024-10-25,At Risk
+473,Mei,Lopez,mei.lopez473@example.com,United States,Downtown,2026-07-15,Returning
+474,Omar,Muller,omar.muller474@example.com,Canada,Riverside,2024-05-22,VIP
+475,Kabir,Patel,kabir.patel475@example.com,France,Riverside,2024-03-05,Returning
+476,Yusuf,Patel,yusuf.patel476@example.com,Canada,Lakeview,2025-05-10,New
+477,Diego,Patel,diego.patel477@example.com,Germany,Hillside,2025-08-31,Returning
+478,Nina,Smith,nina.smith478@example.com,United Kingdom,Lakeview,2024-01-07,At Risk
+479,Elena,Sato,elena.sato479@example.com,Australia,Hillside,2026-04-03,VIP
+480,Nina,Novak,nina.novak480@example.com,Canada,Downtown,2024-05-19,VIP
+481,Elena,Rossi,elena.rossi481@example.com,Germany,Hillside,2024-11-17,Returning
+482,Mei,Novak,mei.novak482@example.com,Brazil,Hillside,2025-08-12,Returning
+483,Elena,Silva,elena.silva483@example.com,Brazil,Hillside,2025-01-08,New
+484,Maya,Rossi,maya.rossi484@example.com,Japan,Riverside,2025-11-29,New
+485,Nina,Ivanov,nina.ivanov485@example.com,Germany,Hillside,2026-03-27,VIP
+486,Noor,Sato,noor.sato486@example.com,Canada,Hillside,2024-05-22,VIP
+487,Leo,Patel,leo.patel487@example.com,United Kingdom,Hillside,2026-03-19,At Risk
+488,Noor,Kim,noor.kim488@example.com,Australia,Hillside,2025-08-19,At Risk
+489,Yusuf,Ali,yusuf.ali489@example.com,India,Lakeview,2025-12-19,New
+490,Ivan,Lopez,ivan.lopez490@example.com,Germany,Lakeview,2024-06-19,New
+491,Mei,Lopez,mei.lopez491@example.com,UAE,Hillside,2024-04-18,New
+492,Ivan,Patel,ivan.patel492@example.com,Germany,Downtown,2026-02-03,Returning
+493,Nina,Novak,nina.novak493@example.com,Canada,Hillside,2026-03-01,Returning
+494,Diego,Khan,diego.khan494@example.com,France,Metro City,2024-10-29,At Risk
+495,Noor,Smith,noor.smith495@example.com,United Kingdom,Lakeview,2024-11-15,VIP
+496,Nina,Lopez,nina.lopez496@example.com,Germany,Downtown,2025-05-09,VIP
+497,Arjun,Smith,arjun.smith497@example.com,France,Hillside,2024-11-22,New
+498,Kabir,Khan,kabir.khan498@example.com,United States,Metro City,2026-05-19,VIP
+499,Ivan,Muller,ivan.muller499@example.com,United Kingdom,Riverside,2025-06-12,Returning
+500,Omar,Novak,omar.novak500@example.com,Japan,Hillside,2025-04-18,Returning

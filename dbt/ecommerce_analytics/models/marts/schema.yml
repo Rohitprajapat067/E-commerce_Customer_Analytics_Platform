@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: >
+      Gold-layer customer dimension enriched with lifetime order stats.
+      Powers the "Customer" Power BI dashboard.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: dim_products
+    description: Gold-layer product dimension enriched with sales stats.
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: fct_orders
+    description: Order-grain fact table with derived revenue and totals.
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+
+  - name: customer_rfm
+    description: RFM (Recency, Frequency, Monetary) segmentation per customer.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: rfm_segment
+        tests:
+          - accepted_values:
+              values: ['Champions', 'Loyal Customers', 'At Risk', 'Lost', 'Needs Attention']
+
+  - name: customer_clv
+    description: Historical + simple predictive Customer Lifetime Value per customer.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
